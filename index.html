@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mode Share Indicator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo" alt="">
+      CITY OF VANCOUVER</div>
+
+    <nav class="nav-links">
+      <a href="#">Catalogue</a>
+      <a href="#">Dashboards</a>
+      <a href="#">Chart Builder</a>
+      <a href="#">Map Builder</a>
+      <a href="#">Help & API</a>
+      <a href="#">Contact</a>
+      <a href="#">Vancouver.ca</a>
+    </nav>
+
+    <div class="header-buttons">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Signup</button>
+    </div>
+  </header>
+
+
+  <div class="breadcrumbs">
+    Healthy City Dashboard > Mode Share (trips made by foot, bike, or transit)
+  </div>
+
+
+  <section class="cards-section">
+    <div class="info-card">
+      <h3>Mode share 
+      <br>(trips by foot, bike, transit)</h3>
+      <span class="highlighter Improving">Needs Improving</span>
+    </div>
+    <div class="info-card">
+      <h3>Desired Target: 50% 
+        <br>Desired Trend
+      </h3>
+      <span class="highlighter Increasing">Increasing</span>
+    </div>
+    <div class="info-card">
+      <h3>Actual trend in 2020
+        <br>Actual: 44.0%
+      </h3>
+      <span class="highlighter Decreasing">Decreased</span>
+    </div>
+  </section>
+
+<section class="heading">
+  <h2>Map for Mode share (trips made by foot, bike, or transit).</h2>
+  <p class="subtitle">Select the different areas within the region to compare the data.</p>
+  </section>
+
+
+  <section class="map-chart">
+    <div class="map-box">Map Placeholder</div>
+    <div class="chart-box">Chart Placeholder</div>
+  </section>
+
+
+  <section class="heading">
+  <h2>Bar Chart and Table for Mode share (trips made by foot, bike, or transit).</h2>
+  <p class="subtitle">Hover the different bars within the for each year to see the data.</p>
+  </section>
+  
+  <section class="bar-table">
+    <div class="bar-box">
+    <canvas id="modeShareChart"></canvas>
+</div>
+
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Year</th><th>Actual</th><th>Target</th><th>Geography</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>2022</td><td>51%</td><td>—</td><td>City</td></tr>
+        <tr><td>2021</td><td>N/A</td><td>—</td><td>City</td></tr>
+        <tr><td>2020</td><td>44%</td><td>50%</td><td>City</td></tr>
+        <tr><td>2019</td><td>54.1%</td><td>—</td><td>City</td></tr>
+        <tr><td>2018</td><td>52.8%</td><td>—</td><td>City</td></tr>
+        <tr><td><Button class="dataset-explore">Explore This Dataset</Button></td></tr>
+      </tbody>
+      
+    </table>
+  </section>
+
+
+<section class="heading">
+  <h2>Understanding Vancouver’s Mode Share Indicator</h2>
+  <p class="subtitle">Why and how Vancouver tracks sustainable travel — and what the results tell us.</p>
+  </section>
+
+  <section class="accordian-sidebar">
+
+  <div class="accordion">
+    <div class="accordian-item">
+      <button class="accordian-header">
+        Why We Measure This
+        <span class="arrow"></span>
+      </button>
+      <div class="accordian-body">
+        <p>
+          The City of Vancouver monitors how residents travel  whether by walking, cycling, or using public transit to understand our collective shift toward more sustainable modes of transportation.
+          </p>
+          <p>Tracking this data helps evaluate how effectively we are reducing greenhouse gas emissions and supporting citywide sustainability goals.
+          </p>
+          <p>Mode share is an important indicator in assessing the success of key strategies outlined in the Climate Emergency Action Plan and Transportation 2040 Plan. These initiatives aim to create a safer, cleaner, and more connected city by encouraging residents to choose active and low-carbon ways of getting around.</p>
+      </div>
+    </div>
+
+    <div class="accordian-item">
+      <button class="accordian-header">
+        How We Measure It
+        <span class="arrow"></span>
+      </button>
+      <div class="accordian-body">
+        <p>
+          The City of Vancouver monitors how residents travel  whether by walking, cycling, or using public transit to understand our collective shift toward more sustainable modes of transportation.</p>
+          <p>Tracking this data helps evaluate how effectively we are reducing greenhouse gas emissions and supporting citywide sustainability goals.</p>
+          <p>Mode share is an important indicator in assessing the success of key strategies outlined in the Climate Emergency Action Plan and Transportation 2040 Plan. These initiatives aim to create a safer, cleaner, and more connected city by encouraging residents to choose active and low-carbon ways of getting around.</p>
+      </div>
+    </div>
+
+    <div class="accordian-item">
+      <button class="accordian-header">
+        What the Results Show
+        <span class="arrow"></span>
+      </button>
+      <div class="accordian-body">
+        <p>
+          The City of Vancouver monitors how residents travel  whether by walking, cycling, or using public transit to understand our collective shift toward more sustainable modes of transportation
+          </p>
+          <p>Tracking this data helps evaluate how effectively we are reducing greenhouse gas emissions and supporting citywide sustainability goals.
+          </p>
+          <p>Mode share is an important indicator in assessing the success of key strategies outlined in the Climate Emergency Action Plan and Transportation 2040 Plan. These initiatives aim to create a safer, cleaner, and more connected city by encouraging residents to choose active and low-carbon ways of getting around.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h1 class="sidebar-heading">Key-Partners</h1>
+  </div>
+
+</section>
+
+<footer>
+  <div class="footer">
+    
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
