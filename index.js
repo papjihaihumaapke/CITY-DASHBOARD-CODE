@@ -27,7 +27,7 @@ fetch("./data.json")
           {
             label: "Actual Trips",
             data: actualData,
-            backgroundColor: "#278CD4"
+            backgroundColor: "#000000"
           },
           {
             label: "Target Trips",
