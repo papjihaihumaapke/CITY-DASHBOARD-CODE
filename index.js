@@ -4,7 +4,10 @@
 const accItems = document.querySelectorAll(".accordian-item");
 accItems.forEach(item => {
   const header = item.querySelector(".accordian-header");
-  header.addEventListener("click", () => item.classList.toggle("active"));
+  header?.addEventListener("click", () => {
+    const isActive = item.classList.toggle("active");
+    header.setAttribute("aria-expanded", String(isActive));
+  });
 });
 
 // ==========================
