@@ -176,7 +176,7 @@ main {
 
 .bar-box {
   flex: 1;
-  height: 350px;
+  min-height: 450px;
   background: var(--boxes-background);
   border: 1px solid var(--boxes-border);
   border-radius: 4px;
@@ -185,7 +185,7 @@ main {
   align-items:center;
 }
 .data-table {
-  height: 350px auto;
+  height: auto;
   flex: 1;
   border-collapse: collapse;
   background: var(--boxes-background);
