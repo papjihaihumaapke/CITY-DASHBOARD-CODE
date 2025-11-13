@@ -7,7 +7,7 @@
   --boxes-border: #D9D9D5;
 }
 
-/* Keep header full width */
+
 body {
   margin: 0;
   padding: 0;
@@ -16,22 +16,22 @@ body {
   color: #2B2B2B;
 }
 
-/* Centered content wrapper */
+
 main {
   display: flex;
   justify-content: center;
   background: var(--page-background);
+
 }
 
-/* Limits width and adds gutters */
 .dashboard-container {
   width: 100%;
   max-width: 1250px;
   margin: 0 auto;
-  padding: 0 2rem; /* side padding for spacing */
+  padding: 0 2rem; 
 }
 
-/* Header stays full-width */
+
 .header {
   display: flex;
   justify-content: space-between;
